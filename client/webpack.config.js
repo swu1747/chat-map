@@ -7,7 +7,6 @@ const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const isProduction = process.env.NODE_ENV == 'production';
 
 
-const stylesHandler = 'style-loader';
 
 
 
@@ -43,7 +42,7 @@ const config = {
             },
             {
                 test: /\.css$/i,
-                use: [stylesHandler, 'css-loader'],
+                use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
