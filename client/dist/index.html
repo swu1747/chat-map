@@ -1,38 +1,28 @@
-<head><script defer src="bundle.js"></script></head>Html Webpack Plugin:
-<pre>
-Error: Child compilation failed:
-Module not found: Error: Can't resolve '/Users/wu/chat-map/node_modules/html-webpack-plugin/lib/loader.js' in '/Users/wu/chat-map'
-ModuleNotFoundError: Module not found: Error: Can't resolve '/Users/wu/chat-map/node_modules/html-webpack-plugin/lib/loader.js' in '/Users/wu/chat-map'
-    at /Users/wu/chat-map/node_modules/webpack/lib/Compilation.js:2100:28
-    at /Users/wu/chat-map/node_modules/webpack/lib/NormalModuleFactory.js:904:13
-    at eval (eval at create (/Users/wu/chat-map/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
-    at /Users/wu/chat-map/node_modules/webpack/lib/NormalModuleFactory.js:341:22
-    at eval (eval at create (/Users/wu/chat-map/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
-    at /Users/wu/chat-map/node_modules/webpack/lib/NormalModuleFactory.js:518:22
-    at /Users/wu/chat-map/node_modules/webpack/lib/NormalModuleFactory.js:155:11
-    at /Users/wu/chat-map/node_modules/webpack/lib/NormalModuleFactory.js:738:23
-    at /Users/wu/chat-map/node_modules/neo-async/async.js:2830:7
-    at done (/Users/wu/chat-map/node_modules/neo-async/async.js:2925:13)
-    at /Users/wu/chat-map/node_modules/webpack/lib/NormalModuleFactory.js:1174:23
-    at finishWithoutResolve (/Users/wu/chat-map/node_modules/enhanced-resolve/lib/Resolver.js:567:11)
-    at /Users/wu/chat-map/node_modules/enhanced-resolve/lib/Resolver.js:656:15
-    at /Users/wu/chat-map/node_modules/enhanced-resolve/lib/Resolver.js:718:5
-    at eval (eval at create (/Users/wu/chat-map/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
-    at /Users/wu/chat-map/node_modules/enhanced-resolve/lib/Resolver.js:718:5
-    at eval (eval at create (/Users/wu/chat-map/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)
-    at /Users/wu/chat-map/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:89:43
-    at /Users/wu/chat-map/node_modules/enhanced-resolve/lib/Resolver.js:718:5
-    at eval (eval at create (/Users/wu/chat-map/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
-    at /Users/wu/chat-map/node_modules/enhanced-resolve/lib/Resolver.js:718:5
-    at eval (eval at create (/Users/wu/chat-map/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
-    at /Users/wu/chat-map/node_modules/enhanced-resolve/lib/Resolver.js:718:5
-    at eval (eval at create (/Users/wu/chat-map/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
-    at /Users/wu/chat-map/node_modules/enhanced-resolve/lib/Resolver.js:718:5
-    at eval (eval at create (/Users/wu/chat-map/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:27:1)
-    at /Users/wu/chat-map/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:89:43
-    at /Users/wu/chat-map/node_modules/enhanced-resolve/lib/Resolver.js:718:5
-    at eval (eval at create (/Users/wu/chat-map/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
-    at /Users/wu/chat-map/node_modules/enhanced-resolve/lib/Resolver.js:718:5
-    at eval (eval at create (/Users/wu/chat-map/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)
-    at /Users/wu/chat-map/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:41:15
-    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)</pre>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Webpack App</title>
+<script defer src="main.js"></script></head>
+
+<body>
+    <div id="app"></div>
+</body>
+
+<!-- <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("service-worker.js")
+                    .then((registration) => {
+                        console.log("Service Worker registered: ", registration);
+                    })
+                    .catch((registrationError) => {
+                        console.error("Service Worker registration failed: ", registrationError);
+                    });
+            });
+        }
+    </script> -->
+
+</html>
