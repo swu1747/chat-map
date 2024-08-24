@@ -1,7 +1,7 @@
 import React from "react";
-
-const InputText: React.FC = (type<string>) => {
-    return (<input>{type}</input>)
+//www
+const InputText: React.FC = () => {
+    return (<input></input>)
 }
 
 export default InputText
