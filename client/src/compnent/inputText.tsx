@@ -1,5 +1,5 @@
 import React from "react";
-//www
+//www ss
 const InputText: React.FC = () => {
     return (<input></input>)
 }
