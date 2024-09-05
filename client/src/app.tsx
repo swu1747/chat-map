@@ -9,8 +9,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { onAuthStateChanged } from "firebase/auth";
 import { signOut } from "firebase/auth";
 const App: React.FC = () => {
-    const foo = <T,>(x: T) => x;
-    const a = <T,>(a:T)=>{return a};
+
     useEffect(() => {
             onAuthStateChanged(auth, (user) => {
                 console.log('hahha', user)
@@ -30,7 +29,6 @@ const App: React.FC = () => {
                     console.log(ans)
     }
                     return (<>
-
                         <form onSubmit={submitHandler}>
                             <label>email</label>
                             <input className="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type='text' value={email} onChange={emailHandler} />
